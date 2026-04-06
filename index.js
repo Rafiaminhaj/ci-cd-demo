@@ -1,5 +1,12 @@
-function add(a, b) {
-  return a + b;
-}
+const http = require("http");
 
-console.log("Sum:", add(2, 3));
+const PORT = process.env.PORT || 3000;
+
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { "Content-Type": "text/plain" });
+  res.end("CI/CD Demo App is Running 🚀");
+});
+
+server.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});

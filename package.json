@@ -1,7 +1,6 @@
 {
   "name": "ci-cd-demo",
   "version": "1.0.0",
-  "description": "CI CD Demo App",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
